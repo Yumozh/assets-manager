@@ -48,11 +48,11 @@ public class Vehicle extends Asset{
         double reducedValue;
 
         if(age <= 3) {
-            reducedValue = getValue() * Math.pow(0.97, age);
+            reducedValue = getOriginalCost() * Math.pow(0.97, age);
         } else if (age <= 6) {
-            reducedValue = getValue() * Math.pow(0.94, age);
+            reducedValue = getOriginalCost() * Math.pow(0.94, age);
         } else if (age <= 10) {
-            reducedValue = getValue() * Math.pow(0.92, age);
+            reducedValue = getOriginalCost() * Math.pow(0.92, age);
         }else{
             reducedValue = 1000;
         }

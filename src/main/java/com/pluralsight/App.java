@@ -62,7 +62,7 @@ public class App {
                         "Make " + vehicle.getMakeModel() + "\n" +
                         "Current Value " + vehicle.getValue() + "\n";
             }
-            }
-        System.out.println(message);
+            System.out.println(message);
+        }
     }
 }
